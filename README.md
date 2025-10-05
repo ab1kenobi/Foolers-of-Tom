@@ -40,6 +40,6 @@ main features: give a predictability score, classify the score as rainy or not r
 regions around the United States had yielded positive results as areas such as the deserts in
 Arizona gave a low score of rain and a non rainy rating.
 
-<img width="745" height="619" alt="Classifier Feature Importance" src="https://github.com/user-attachments/assets/e4f33452-8121-46ca-9e02-e90dae591e05" />
+
 
 
