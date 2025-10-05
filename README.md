@@ -42,3 +42,4 @@ Arizona gave a low score of rain and a non rainy rating.
 
 
 
+<img width="618" height="478" alt="Screenshot 2025-10-05 at 1 01 28 PM" src="https://github.com/user-attachments/assets/e1a0e5d7-1cad-4b8f-8975-d99f030f1117" />
