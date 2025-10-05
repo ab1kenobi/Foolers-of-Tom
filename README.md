@@ -13,6 +13,18 @@ determine the accuracy of the temperature predicted. Given user input for any lo
 United States and date the model will output a temperature with an average deviation being
 2.29(MAE), the MSE also providing a difference value, and R-squared giving a metric indication
 of the proportion of variance ranging from 0-1, (R-Squared = 0.921).
+
+Initially the plan for the temperature predictor model was to give a range of hot, moderate and
+cold temperatures for the user to make their judgement on, given these classification for the
+predictions we opted to use a random forest classifier model to determine the classification of
+the day's temperature via likelihood. However given the scope of temperature we were working
+with we kept getting a moderate output for all days and locations. The only real reason we
+wanted to classify the temperature was to output a below freezing string that would alter the
+kind of precipitation that would fall i.e. either snow or rain. However, given that freezing
+temperature is below 32 degrees Fahrenheit that could easily be adjusted. So we switched over
+to a regression model to provide a numeric prediction averaged from the models decisions.
+
+
 The rainfall model used a random forest classification model. It was trained on longitude,
 latitude, and months of the year. The model was trained on data pulled from earthaccess.
 Specifically, the data was pulled from"M2SDNXSLV". In order to specifically get more data, we
@@ -27,12 +39,7 @@ that if the model did not load, then it would take too long to retrieve any data
 main features: give a predictability score, classify the score as rainy or not rainy. Testing various
 regions around the United States had yielded positive results as areas such as the deserts in
 Arizona gave a low score of rain and a non rainy rating.
-Initially the plan for the temperature predictor model was to give a range of hot, moderate and
-cold temperatures for the user to make their judgement on, given these classification for the
-predictions we opted to use a random forest classifier model to determine the classification of
-the day's temperature via likelihood. However given the scope of temperature we were working
-with we kept getting a moderate output for all days and locations. The only real reason we
-wanted to classify the temperature was to output a below freezing string that would alter the
-kind of precipitation that would fall i.e. either snow or rain. However, given that freezing
-temperature is below 32 degrees Fahrenheit that could easily be adjusted. So we switched over
-to a regression model to provide a numeric prediction averaged from the models decisions.
+
+<h2>Classifier Feature Importance</h2>
+<img src="assets/feature_importance.png" alt="Classifier Feature Importance" width="500" />
+
